@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Redacted Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Redacted Text Result</h1>
+        <div class="result">
+            <h2>Original Image</h2>
+            <img src="{{ url_for('static', filename=image_filename) }}" alt="Uploaded Image">
+            <h2>Redacted Text</h2>
+            <p>{{ redacted_text }}</p>
+        </div>
+        <a href="{{ url_for('index') }}" class="btn">Upload Another Image</a>
+    </div>
+</body>
+</html>

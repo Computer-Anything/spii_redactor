@@ -21,7 +21,9 @@ This Jupyter Notebook demonstrates the process of detecting and redacting Person
    python -m spacy download en_core_web_sm
    ```
 
-3. Open the notebook `pii_redaction_ocr.ipynb` in Jupyter Notebook or JupyterLab.
+3. Open the notebook `pytorch_training.ipynb` in Jupyter Notebook or JupyterLab and begin training the model.
+
+4. Once you like what the model is returning, you can use the `pii_detection_redaction.ipynb` notebook to add a file upload feature and test the PII detection and redaction functionality.
 
 4. Follow the steps in the notebook to:
    - Extract text from an image.
@@ -50,4 +52,3 @@ This notebook serves as a prototype for a Flask web application that will allow 
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
-```

@@ -1,0 +1,33 @@
+TRAIN_DATA = [
+    # PERSON and ORG examples
+    ("Alice Johnson is a project manager at Acme Corp.", {"entities": [(0, 13, "PERSON"), (41, 50, "ORG")]}),
+    ("Bob Brown is a software engineer.", {"entities": [(0, 9, "PERSON")]}),
+    ("Charlie Black works at Example Inc.", {"entities": [(0, 13, "PERSON"), (25, 36, "ORG")]}),
+    ("David White is a data scientist at DataCorp.", {"entities": [(0, 11, "PERSON"), (36, 44, "ORG")]}),
+
+    # PHONE examples
+    ("Call me at 123-456-7890.", {"entities": [(11, 23, "PHONE")]}),
+    ("My number is (555) 123-4567.", {"entities": [(13, 27, "PHONE")]}),
+    ("Reach out at +1-800-555-0199.", {"entities": [(13, 28, "PHONE")]}),
+    ("Contact: 555.987.6543.", {"entities": [(9, 22, "PHONE")]}),
+    ("Phone: 5551234567.", {"entities": [(7, 18, "PHONE")]}),
+    ("You can reach me at +44 20 7946 0958.", {"entities": [(21, 36, "PHONE")]}),
+    ("Dial +91-9876543210 for support.", {"entities": [(5, 19, "PHONE")]}),
+
+    # EMAIL examples
+    ("Email me at john.doe@example.com.", {"entities": [(11, 32, "EMAIL")]}),
+    ("Reach me at jane.doe@company.org.", {"entities": [(11, 33, "EMAIL")]}),
+    ("Contact support at support@company.com.", {"entities": [(18, 38, "EMAIL")]}),
+    ("Send an email to info@company.com for details.", {"entities": [(17, 33, "EMAIL")]}),
+    ("Email: admin@sub.example.com.", {"entities": [(7, 27, "EMAIL")]}),
+    ("For inquiries, email us at help@domain.co.uk.", {"entities": [(23, 41, "EMAIL")]}),
+    ("Contact: first.last@sub.domain.com.", {"entities": [(9, 33, "EMAIL")]}),
+    ("Reach out to user.name+test@example.io.", {"entities": [(15, 42, "EMAIL")]}),
+    ("Send feedback to feedback@service.co.", {"entities": [(18, 41, "EMAIL")]}),
+
+    # Mixed examples
+    ("Contact Alice Johnson at alice.johnson@example.com or 555-123-4567.", {"entities": [(8, 21, "PERSON"), (25, 51, "EMAIL"), (55, 67, "PHONE")]}),
+    ("Bob Brown can be reached at bob.brown@company.com or +1-800-555-0199.", {"entities": [(0, 9, "PERSON"), (27, 49, "EMAIL"), (53, 68, "PHONE")]}),
+    ("Charlie Black's email is charlie.black@example.com and his phone is 123-456-7890.", {"entities": [(0, 13, "PERSON"), (22, 48, "EMAIL"), (63, 75, "PHONE")]}),
+    ("David White can be contacted at david.white@data.com or (555) 123-4567.", {"entities": [(0, 11, "PERSON"), (31, 50, "EMAIL"), (54, 68, "PHONE")]}),
+]
